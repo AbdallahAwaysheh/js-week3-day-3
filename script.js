@@ -76,3 +76,41 @@
 //             ` 
 //         });
 //     });
+
+// const users = document.querySelector('.users');
+// let addresses =[];
+
+// fetch("https://jsonplaceholder.typicode.com/users")
+//     .then(res=>res.json())
+//     .then(data=>{
+//         data.forEach(user => {
+
+//             getAddress(user.address);
+//             let addressesResult="";
+//             addresses.forEach(ele=>{
+//                 addressesResult+=ele;
+//                 addressesResult+="<br>";
+//             });
+//             users.innerHTML+=`
+//             <h1>Name : ${user.name}</h1>
+//             <p>User Name : ${user.username}</p>
+//             <p>Email : ${user.email}</p>
+//             <p>Address :<br> ${addressesResult}</p>
+//             <hr>
+//             `;
+//             addresses=[];
+            
+//         });
+//     });
+
+
+//     function getAddress(addressObj){
+//         for (let x in addressObj){
+//             if(typeof(addressObj[x])=='string'){
+//                 addresses.push(addressObj[x])
+//                 console.log(addressObj[x])
+//             }
+//         }
+//     }
+
+
